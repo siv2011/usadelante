@@ -1,4 +1,8 @@
 Usadelante::Application.routes.draw do
+  resources :students
+  match 'meals/matchstudent',    to: 'students#match'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
